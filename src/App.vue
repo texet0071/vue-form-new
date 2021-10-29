@@ -1,6 +1,9 @@
 <template>
+<div class="body">
+        <vue-form/>
+</div>
 
-<vue-form/>
+
 
 </template>
 
@@ -14,4 +17,7 @@ components: {VueForm}
 
 <style>
 
+        body {
+         background: #E5E5E5;
+        }
 </style>
