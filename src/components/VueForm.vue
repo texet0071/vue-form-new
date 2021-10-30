@@ -34,8 +34,9 @@
 
             </div>
 
-            <div class="ruls">
-                <input type="checkbox" class="ruls-in">Принимаю <a href="#">условия </a> использования
+            <div class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="check" name="check">
+                <label for="check">Принимаю <a href="#">условия </a> использования</label>
             </div>
 
             <div class="btn-reg">
@@ -108,7 +109,7 @@
         padding: 85px 30px 33px 30px;
     }
 
-   .account-info input,select {
+   .account-info input {
         display: block;
         width: 400px;
         height: 52px;
@@ -119,6 +120,17 @@
         border-radius: 6px;
         margin: 0;
     }
+
+   .account-info select {
+       display: block;
+       width: 400px;
+       height: 52px;
+       background: #FFFFFF;
+       border: 1px solid #DBE2EA;
+       box-sizing: border-box;
+       box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+       border-radius: 6px;
+   }
 
 
     .account-info label {
@@ -141,6 +153,58 @@
         width: 100%;
     }
 
+    .custom-checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .custom-checkbox+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+    .custom-checkbox+label::before {
+        content: '';
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #DBE2EA;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+        border-radius: 4px;
+        margin-right: 8px;
+    }
+
+    .custom-checkbox:checked+label::after {
+        border-color: #0b76ef;
+        background-color: #0b76ef;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+
+    .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+        border-color: #b3d7ff;
+    }
+
+    .custom-checkbox:not(:disabled):active+label::before {
+        background-color: #b3d7ff;
+        border-color: #b3d7ff;
+    }
+
+    .custom-checkbox:focus+label::before {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    .custom-checkbox:focus:not(:checked)+label::before {
+        border-color: #80bdff;
+    }
+
+    .custom-checkbox:disabled+label::before {
+        background-color: #e9ecef;
+    }
+
     .info-name{
         padding-bottom: 33px;
     }
@@ -155,8 +219,12 @@
 
 
 
-    .ruls {
+    .checkbox {
         padding-left: 30px;
+    }
+
+    .checkbox a {
+        padding: 0 3px 0 3px;
     }
 
 
