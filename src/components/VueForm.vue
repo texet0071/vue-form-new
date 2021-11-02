@@ -64,7 +64,7 @@
 
     .card {
         margin: 0 auto;
-        max-width: 45%;
+        max-width: 30%;
     }
 
     form {
@@ -194,7 +194,7 @@
     }
 
     .custom-checkbox:focus+label::before {
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
     }
 
     .custom-checkbox:focus:not(:checked)+label::before {
