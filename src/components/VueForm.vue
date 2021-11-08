@@ -65,9 +65,9 @@
 
 
     .card {
-        padding: 10px;
+        padding: 20px;
         margin: 0 auto;
-        max-width: 30%;
+        max-width: 20%;
     }
 
     form {
@@ -127,9 +127,8 @@
     .account-info label {
         color: #395870;
         display: block;
-        padding-bottom:  7px;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 7px;
     }
 
     .account-info input{
@@ -166,6 +165,7 @@
         align-items: center;
         user-select: none;
     }
+
     .custom-checkbox+label::before {
         content: '';
         display: inline-block;
@@ -206,19 +206,6 @@
     .custom-checkbox:disabled+label::before {
         background-color: #e9ecef;
     }
-
-    .info-name{
-        padding-bottom: 33px;
-    }
-
-    .info-email {
-        padding-bottom: 34px;
-    }
-
-    .info-phone {
-        padding-bottom: 34px;
-    }
-
 
     .checkbox {
         padding-left: 30px;
