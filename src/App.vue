@@ -18,6 +18,9 @@ components: {VueForm}
 <style>
 
         body {
-         background: #E5E5E5;
+                margin: 0;
+                padding: 0;
+                background-color: #004882;
         }
+
 </style>

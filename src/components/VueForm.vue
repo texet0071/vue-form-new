@@ -23,14 +23,16 @@
                 </div>
 
 
-                <label for="laung">Язык</label>
-                <select name="laung" id="laung">
-                    <option style="display: none">Язык</option>
-                    <option value="rus">Русский</option>
-                    <option value="eng">Английский</option>
-                    <option value="china">Китайский</option>
-                    <option value="spanish">Испанский</option>
-                </select>
+                <div class="box">
+                    <label for="laung">Язык</label>
+                    <select name="laung" id="laung">
+                        <option style="display: none">Язык</option>
+                        <option value="rus">Русский</option>
+                        <option value="eng">Английский</option>
+                        <option value="china">Китайский</option>
+                        <option value="spanish">Испанский</option>
+                    </select>
+                </div>
 
             </div>
 
@@ -63,6 +65,7 @@
 
 
     .card {
+        padding: 10px;
         margin: 0 auto;
         max-width: 30%;
     }
@@ -70,7 +73,6 @@
     form {
         overflow: hidden;
         width: 460px;
-        padding: 16px;
         border-radius: 24px;
         box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02);
         background: #fff;
@@ -91,11 +93,7 @@
         color: #2C2738;
     }
 
-    .form-border {
-        border: 0;
-        margin: 0;
-        padding: 0;
-    }
+
 
     input::-webkit-input-placeholder {
         width: 287px;
@@ -103,6 +101,7 @@
         font-size: 16px;
         line-height: 21px;
         color: #7C9CBF;
+
     }
 
     .account-info {
@@ -111,13 +110,6 @@
 
    .account-info input {
         display: block;
-        width: 400px;
-        height: 52px;
-        background: #FFFFFF;
-        border: 1px solid #DBE2EA;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
-        border-radius: 6px;
         margin: 0;
     }
 
@@ -126,21 +118,20 @@
        width: 400px;
        height: 52px;
        background: #FFFFFF;
-       border: 1px solid #DBE2EA;
+       border: 2px solid #0880AE;
        box-sizing: border-box;
        box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
        border-radius: 6px;
    }
 
-
     .account-info label {
         color: #395870;
         display: block;
-        padding-bottom: 7px;
+        padding-bottom:  7px;
         font-weight: bold;
         margin-bottom: 20px;
-
     }
+
     .account-info input{
         background: #FFFFFF;
         border: 1px solid #DBE2EA;
@@ -149,7 +140,6 @@
         border-radius: 6px;
         color: #636466;
         padding: 16px;
-        margin-top: -6px;
         width: 100%;
     }
 
@@ -157,6 +147,18 @@
         position: absolute;
         z-index: -1;
         opacity: 0;
+    }
+
+    .info-name{
+        padding-bottom: 33px;
+    }
+
+    .info-email {
+        padding-bottom: 34px;
+    }
+
+    .info-phone {
+        padding-bottom: 34px;
     }
 
     .custom-checkbox+label {
@@ -216,7 +218,6 @@
     .info-phone {
         padding-bottom: 34px;
     }
-
 
 
     .checkbox {
