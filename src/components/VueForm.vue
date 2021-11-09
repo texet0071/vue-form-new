@@ -125,7 +125,7 @@
    }
 
     .account-info label {
-        color: #395870;
+        color: #756F86;
         display: block;
         font-weight: bold;
         margin-bottom: 7px;
